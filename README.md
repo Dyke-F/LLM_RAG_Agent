@@ -43,8 +43,8 @@ RAGent/DSPY.
 ├── agent_tools_dummy.py                 # dummy implementation of agent tools returning defaults for fast debugging and demonstrations
 ├── agent_tools.py                       # Actual implementation of the agent tools. 
 ├── chroma_db_retriever.py               # Retriever Class for RAG, modified from DSPY's implementation to run via HTTP Client.
-├── deduplicate_data.py                  # Remove duplicated files (if exist).
 ├── citation_utils.py                    # Utility function for Citation Checking in the Agent's output.
+├── deduplicate_data.py                  # Remove duplicated files (if exist).
 ├── embed.py                             # Core script to generate text embeddings from medical texts and create a permanent Chroma db storage.
 ├── filter_data_sources.py               # Script to preprocess and clean data to relevant topics.
 ├── loguru_logger.py                     # Implementation of the main logger.
@@ -53,6 +53,9 @@ RAGent/DSPY.
 ├── preprocess_logger.py                 # Implementation of the preprocessing logger.
 ├── preprocess_sources.py                # Unify data and add IDs.
 ├── rag_config.py                        # Configuration file with defaults for the embedding and db creation.
+├── rag_logger.py                        # Logger for retrieval.
+├── rag_utils.py                         # Utility functions for RAG metadata etc.
+├── rag.py                               # Main implementation of embeddings and RAG class and loaders.
 ├── run_experiment.ipynb                 # Main notebook to run an experiment.
 ├── scrape_meditron.py                   # Download and convert meditron guidelines data.
 ├── signatures.py                        # DSPY signatures (Prompts).
