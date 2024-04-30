@@ -45,6 +45,7 @@ def register(func):
     return func
 
 
+# Modify this
 SINGLE_VISION_TEMPLATE = (
     "Describe the provided image and generate a detailed and structured report, highlighting the most important findings. "
     "End your report with a short conclusion, summarizing the most important findings. "
@@ -54,6 +55,7 @@ SINGLE_VISION_TEMPLATE = (
     "Here is the image: "
 )
 
+# Modify this
 MULTI_VISION_TEMPLATE = (
     "Compare the images. Highlight your findings, especially differences between the images. "
     "Provide a neutral description of your findings. "
@@ -370,7 +372,7 @@ def segment_image(path_to_img: str, bbox_coordinates: List[List[int]]):
         "-chk",
         "--checkpoint",
         type=str,
-        default="/Users/dykeferber/Desktop/MedGPT4/RAGent/Tools/MedSAM/MedSAM/work_dir/MedSAM/medsam_vit_b.pth",
+        default=".../MedSAM/medsam_vit_b.pth",
         help="path to the trained model",
     )
 

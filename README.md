@@ -7,7 +7,7 @@
 
 ## Software Requirements
 All experiments were run on an Apple MacBook Pro M2 Max 96GB 2023.
-No special hardware is required, if running certain models with hardware acceleration, it is desired to have a CUDA-compatible GPU to speed up the process.
+No special hardware is required, if you wish to run certain models with hardware acceleration, it is recommended to have a CUDA-compatible GPU to speed up the process.
 
 ## General Setup Instructions
 

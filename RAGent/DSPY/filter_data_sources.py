@@ -41,7 +41,7 @@ keywords = [
 exclude = [] # MODIFY THIS
 
 
-in_directory = "/Users/dykeferber/Desktop/MedGPT4/RAGent/ProcessedData" # MODIFY THIS
+in_directory = ".../ProcessedData" # MODIFY THIS
 out_directory = "complete_oncology_data" # MODIFY THIS
 
 # ****** #  ****** # ****** # ****** # ****** # ****** # ****** # ****** #
