@@ -1,3 +1,5 @@
+# Code in parts from: https://colab.research.google.com/github/stanfordnlp/dspy/blob/main/examples/longformqa/longformqa_assertions.ipynb
+
 import os
 
 import dspy
