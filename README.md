@@ -5,7 +5,7 @@
 Research code accompanying **Ferber et al., Nature Cancer 6, 1337–1349 (2025)**:
 [**Development and validation of an autonomous artificial intelligence agent for clinical decision-making in oncology**](https://doi.org/10.1038/s43018-025-00991-6).
 
-[Paper](https://www.nature.com/articles/s43018-025-00991-6) · [Published results](#published-results) · [Code map](#code-map) · [Getting started](#getting-started) · [Citation](#citation)
+[📄 Paper](https://www.nature.com/articles/s43018-025-00991-6) · [Published results](#published-results) · [Code map](#code-map) · [Getting started](#getting-started) · [Citation](#citation)
 
 The study investigates how a GPT-4-based agent can select tools, chain their outputs, and combine multimodal findings with clinical knowledge to answer precision-oncology questions. The harness brings together pathology models, medical-image analysis, genomic interpretation, literature search, and evidence-grounded response generation.
 
@@ -13,7 +13,9 @@ The study investigates how a GPT-4-based agent can select tools, chain their out
 
 *Project overview from the existing repository. See the [publication](https://www.nature.com/articles/s43018-025-00991-6) for the study figures, methods, and accompanying credits.*
 
-## Published results
+<a name="published-results"></a>
+
+## 📊 Published results
 
 Four medical reviewers evaluated 20 constructed patient scenarios combining simulated histories with real imaging/pathology data and genomic profiles. The following are the results reported for the study system.
 
@@ -26,7 +28,9 @@ Four medical reviewers evaluated 20 constructed patient scenarios combining simu
 
 The GPT-4-alone comparison above applies to completeness. Reviewers assessed the other axes separately; see [Figure 4 and the supplementary material](https://www.nature.com/articles/s43018-025-00991-6#Fig4) for scoring definitions and the full evaluation.
 
-## Agent harness
+<a name="agent-harness"></a>
+
+## 🧩 Agent harness
 
 The workflow combines three stages:
 
@@ -36,7 +40,9 @@ The workflow combines three stages:
 
 The research system integrates medical-image segmentation with MedSAM, pathology-model inference, OncoKB, PubMed and web search, calculation, and document retrieval. Tool interfaces and orchestration are organized separately from evidence indexing and response evaluation.
 
-## Code map
+<a name="code-map"></a>
+
+## 🗂️ Code map
 
 Implementation files are under [RAGent/DSPY/](RAGent/DSPY/).
 
@@ -50,7 +56,9 @@ Implementation files are under [RAGent/DSPY/](RAGent/DSPY/).
 | Indexing and preprocessing | [embed.py](RAGent/DSPY/embed.py), [filter_data_sources.py](RAGent/DSPY/filter_data_sources.py), [deduplicate_data.py](RAGent/DSPY/deduplicate_data.py), [preprocess_sources.py](RAGent/DSPY/preprocess_sources.py) |
 | Configuration | [rag_config.py](RAGent/DSPY/rag_config.py), [rag_utils.py](RAGent/DSPY/rag_utils.py) |
 
-## Getting started
+<a name="getting-started"></a>
+
+## ⚙️ Getting started
 
 ### Environment
 
@@ -81,7 +89,9 @@ For OncoKB-enabled workflows, arrange the appropriate access through [OncoKB](ht
 
 [rag_config.py](RAGent/DSPY/rag_config.py) defines document locations, the Chroma collection and storage path, chunking, and model settings. [rag_utils.py](RAGent/DSPY/rag_utils.py) defines the document metadata used during indexing. Model identifiers in the repository describe the original experimental setup; check service availability before a run and record any changes as part of your experimental configuration.
 
-## Working with the pipeline
+<a name="working-with-the-pipeline"></a>
+
+## 🔬 Working with the pipeline
 
 ### 1. Prepare the evidence corpus
 
@@ -106,13 +116,17 @@ Open [run_experiment.ipynb](RAGent/DSPY/run_experiment.ipynb) from `RAGent/DSPY/
 
 For the published evaluation protocol and reported results, use the [paper and its supplementary material](https://www.nature.com/articles/s43018-025-00991-6).
 
-## Research use and data handling
+<a name="research-use-and-data-handling"></a>
+
+## 🔒 Research use and data handling
 
 This repository supports research on clinical agent systems. Keep any patient-level inputs, images, generated outputs, and credentials within the environment authorized for those data. Dataset, model, and API access conditions apply independently of the source-code license. Only use external services under the applicable data-use permissions.
 
 The original setup uses caching in DSPy and the retrieval stack. Review the selected cache configuration when comparing experimental runs, and record model, prompt, corpus, and tool settings alongside results.
 
-## Citation
+<a name="citation"></a>
+
+## 📚 Citation
 
 ```bibtex
 @article{ferber2025oncologyagent,
@@ -131,6 +145,8 @@ The original setup uses caching in DSPy and the retrieval stack. Review the sele
 }
 ```
 
-## Licenses and attribution
+<a name="licenses-and-attribution"></a>
+
+## ⚖️ Licenses and attribution
 
 Repository code is covered by the existing [MIT license](LICENSE.txt). The [article](https://www.nature.com/articles/s43018-025-00991-6#rightslink) is published under [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/), subject to its third-party credit lines. The study summary above is newly written; the existing repository overview image is retained without modification. External data, model weights, software, and services retain their own terms.
