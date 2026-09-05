@@ -32,12 +32,12 @@ The study investigates how a GPT-4-based agent can select tools, chain their out
 
 ## 📊 Published results
 
-Four medical reviewers evaluated 20 constructed patient scenarios combining simulated histories with real imaging/pathology data and genomic profiles. The following are the results reported for the study system.
+Four medical reviewers evaluated 20 constructed patient scenarios combining real imaging/pathology data with simulated patient histories and genomic information. The following are the results reported for the study system.
 
 | Evaluation axis | Agent result | Definition or comparator |
 | --- | --- | --- |
 | Completeness | **87.2%** (95/109) | Expected clinical decisions covered; **30.3%** (33/109) with GPT-4 alone |
-| Correctness | **91.0%** (223/245) | Statements judged factually correct |
+| Correctness | **91.0%** (223/245) | Answer paragraphs judged factually correct |
 | Helpfulness | **94.0%** (63/67) | User questions or instructions effectively addressed |
 | Required tool use | **87.5%** (56/64) | Required tool invocations successfully completed |
 
