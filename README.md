@@ -1,6 +1,6 @@
 <a name="multimodal-precision-oncology-agent"></a>
 
-<h1 align="center">🧬 Multimodal precision-oncology agent</h1>
+<h1 align="center">Multimodal precision-oncology agent</h1>
 
 <p align="center">
   <strong>Clinical reasoning across imaging, pathology and genomics</strong><br/>
