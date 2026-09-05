@@ -1,8 +1,3 @@
-# Repository for: Autonomous AI Agents for Clinical Decision Making in Oncology
-⚠️ This repository is currently under construction. Usage might change in the future. 
-
-⚠️ The current agent implementation uses test functions for the image segmentation and genetic modeling tasks as the original implementation requires external repositories that are challenging to setup. We are working on a solution to simplify their setup in the very near future. The provided test functions (```agent_tools_dummy.py```) are implemented as agent tools without any changes to their original implementation (```agent_tools.py```) and have therefore *no* influence on the LLM-Agents behaviour.
-
 ![Local Image](./overview.png)
 
 ## Software Requirements
