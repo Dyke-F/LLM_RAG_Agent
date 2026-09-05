@@ -1,17 +1,32 @@
-# Multimodal precision-oncology agent
+<a name="multimodal-precision-oncology-agent"></a>
 
-**A clinical agent harness connecting language-model reasoning with imaging, pathology, genomic information, and medical evidence.**
+<h1 align="center">🧬 Multimodal precision-oncology agent</h1>
 
-Research code accompanying **Ferber et al., Nature Cancer 6, 1337–1349 (2025)**:
-[**Development and validation of an autonomous artificial intelligence agent for clinical decision-making in oncology**](https://doi.org/10.1038/s43018-025-00991-6).
+<p align="center">
+  <strong>Clinical reasoning across imaging, pathology and genomics</strong><br/>
+  A clinical agent harness connecting language-model reasoning with imaging, pathology, genomic information, and medical evidence.
+</p>
 
-[📄 Paper](https://www.nature.com/articles/s43018-025-00991-6) · [Published results](#published-results) · [Code map](#code-map) · [Getting started](#getting-started) · [Citation](#citation)
-
-The study investigates how a GPT-4-based agent can select tools, chain their outputs, and combine multimodal findings with clinical knowledge to answer precision-oncology questions. The harness brings together pathology models, medical-image analysis, genomic interpretation, literature search, and evidence-grounded response generation.
+<p align="center">
+  <a href="https://www.nature.com/articles/s43018-025-00991-6">
+    <img src="https://img.shields.io/badge/Nature_Cancer-2025-F97316?style=for-the-badge&amp;labelColor=111827" alt="Published in Nature Cancer (2025)" width="265"/>
+  </a>
+</p>
 
 ![Overview of the multimodal oncology-agent workflow](overview.png)
 
 *Project overview from the existing repository. See the [publication](https://www.nature.com/articles/s43018-025-00991-6) for the study figures, methods, and accompanying credits.*
+
+- 📄 **Publication:** [**Nature Cancer · 2025**](https://www.nature.com/articles/s43018-025-00991-6)  
+  *Development and validation of an autonomous artificial intelligence agent for clinical decision-making in oncology*  
+  Ferber et al. · Nature Cancer 6, 1337–1349 (2025).
+- 📊 [**Published results**](#published-results)
+- 🧩 [**Agent harness**](#agent-harness)
+- 🗂️ [**Code map**](#code-map)
+- ⚙️ [**Getting started**](#getting-started)
+- 📚 [**Citation / BibTeX**](#citation)
+
+The study investigates how a GPT-4-based agent can select tools, chain their outputs, and combine multimodal findings with clinical knowledge to answer precision-oncology questions. The harness brings together pathology models, medical-image analysis, genomic interpretation, literature search, and evidence-grounded response generation.
 
 <a name="published-results"></a>
 
